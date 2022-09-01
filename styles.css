@@ -5,13 +5,24 @@ html, body {
     background-color:  #ECF7FF;
     color: #6B708D;
     font-family: 'Roboto', sans-serif;
-    /* font-size: 16px; */
+    font-size: 8px;
     padding: 0;
     margin: 0;
+    width: 100vw;
 }
 
 h1, h3, h4 {
     color: #292E47;
+}
+h1 {
+    font-size: 3.75rem;
+}
+h3{
+    font-size: 2.50rem;
+}
+
+h4 {
+    font-size: 1.50rem;
 }
 
 .link-color {
@@ -26,9 +37,9 @@ a {
 /*HEADER STYLES*/
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-top: 1rem;
+    margin: 1rem;
 }
 
 nav {
@@ -38,13 +49,14 @@ nav {
 nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* margin: 0; */
+    justify-content: flex-end;
     padding: 0;
 }
 
 nav ul li {
     list-style: none;
+    margin: 2%;
+    font-size: 2rem;
 }
 
 nav ul li a {
@@ -55,11 +67,20 @@ nav ul li a:hover {
     color: #072AC8;
 }
 
+.active {
+    color: #072AC8;
+    font-weight: bold;
+}
+
+header .button {
+    display: none;
+}
+
 .button {
     background-color: #072AC8;
     color: white;
-    font-size: calc(1em + 1vw);
-    padding: 0.2em 0.7em;
+    font-size: calc(1.5rem + 1vw);
+    padding: 1em 1.5em;
 }
 
 /*HERO-SECTION STYLES*/
@@ -67,25 +88,126 @@ nav ul li a:hover {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    justify-content: center;
 }
 
 #hero-section .container-img {
+    min-width: 90vw;
+    min-height: 50vh;
     position: relative;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 5%;
+}
+
+#hero-section #main-img {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #hero-section #card-1 {
     position: absolute;
-    width: 300px;
+    width: 210px;
     height: auto;
+    bottom: 50%;
+    right: 53%;
+    z-index: 1;
 }
 
 #hero-section #card-2 {
     position: absolute;
-    width: 300px;
+    width: 210px;
+    height: auto;
+    top: 70%;
+    left: 55%;
+    z-index: 1;
+}
+
+#hero-section .container {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    text-align: center;
+}
+#hero-section p {
+    font-size: 2.50rem;
+}
+
+#hero-section .container-links {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#hero-section .container-links .link {
+    font-size: calc(1.5rem + 1vw);
+    color: #6B708D;
+    font-weight: bold;
+}
+
+/*PROJECT-SECTION STYLES*/
+
+#project-section .conatiner-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#project-section article {
+    max-width: 80vw;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 3rem;
+}
+
+#project-section img {
+    max-width: 100%;
     height: auto;
 }
 
-#hero-section #main-img {
-    width: 700px;
+#project-section .container {
+    padding: 2rem 3rem;
+}
+
+/*TESTIMONIAL-SECTION STYLES*/
+#testimonial-section {
+    background-image: url(img/testimonial-section/orbit.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+#testimonial-section .container-img {
+    display: flex;
+    justify-content: space-between;
+}
+
+#testimonial-section .container-img img {
+    max-width: 40%;
     height: auto;
+}
+
+/*SERVICE-SECTION STYLES*/
+
+#services-section .conatiner-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+#services-section article {
+    max-width: 80vw;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 3rem;
+}
+
+#services-section img {
+    max-width: 100%;
+    height: auto;
+}
+
+#services-section .container {
+    padding: 2rem 3rem;
 }
