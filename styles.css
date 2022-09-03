@@ -6,7 +6,6 @@ html, body {
     color: #6B708D;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    width: 100vw;
     padding: 0;
     margin: 0;
 }
@@ -17,7 +16,7 @@ h1, h3, h4 {
     margin: 0;
 }
 h1 {
-    font-size: 3.75rem;
+    font-size: 2.75rem;
 }
 h3{
     font-size: 2.50rem;
@@ -120,7 +119,7 @@ header .button {
 }
 
 #hero-section #card-1 {
-    width: 210px;
+    width: 150px;
     height: auto;
     z-index: 1;
     grid-area: card1;
@@ -132,7 +131,7 @@ header .button {
 }
 
 #hero-section #card-2 {
-    width: 100%;
+    width: 150px;
     height: auto;
     z-index: 1;
     grid-area: card2;
@@ -178,7 +177,7 @@ header .button {
 
 /*PROJECT-SECTION STYLES*/
 #project-section {
-    max-width: 80vw;
+    width: 80vw;
     margin: auto;
 }
 
@@ -191,13 +190,13 @@ header .button {
     flex-direction: column;
 }
 
-#project-section article {
+#project-section .card {
     background-color: white;
     margin-bottom: 3rem;
 }
 
 #project-section img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -243,7 +242,7 @@ header .button {
 
 #testimonial-section h3 {
     color: white;
-    margin-top: 2rem;
+    margin: 1.5rem 0;
     grid-area: text1;
     padding: 0 2.5rem;
 }
@@ -254,7 +253,7 @@ header .button {
     line-height: 2.3rem;
     grid-area: text2;
     padding: 0 2.5rem;
-    margin: 1rem 0 0.5rem;
+    margin: 1rem auto 0.5rem;
 }
 
 #testimonial-section > img {
@@ -298,7 +297,7 @@ header .button {
 
 /*SERVICE-SECTION STYLES*/
 #services-section {
-    max-width: 80vw;
+    width: 80vw;
     margin: auto;
 }
 
@@ -345,7 +344,7 @@ header .button {
     padding: 4rem 0 6rem;
 }
 #cta-section .container {
-    max-width: 80vw;
+    width: 80vw;
     margin: auto;
 }
 
@@ -395,7 +394,7 @@ footer {
 }
 
 #direction, #footer-links {
-    max-width: 70vw;
+    width: 70vw;
     margin: auto;
 }
 
