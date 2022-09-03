@@ -31,7 +31,7 @@
         <div class="container-img"> 
             <img src="img/hero-section/card-1.png" id="card-1">
             <img src="img/hero-section/card-2.png" id="card-2">
-            <img src="img/hero-section/hero-image.png" id="main-img">
+            <!-- <img src="img/hero-section/hero-image.png" id="main-img"> -->
         </div>
     </section>
     <section id="client-section">
@@ -71,74 +71,78 @@
         </div>
     </section>
     <section id="testimonial-section">
-        <div class="container-img">
-            <img src="img/testimonial-section/memoji-1.png">
-            <img src="img/testimonial-section/memoji-2.png">
+        <img src="img/testimonial-section/memoji-1.png" alt="emoji 1" id="emoji-1">
+        <img src="img/testimonial-section/memoji-2.png" alt="emoji 2" id="emoji-2">
+        <h3 id="text-1">Hear What Our Clients Have to Say</h3>
+        <h4 id="text-2">“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h4>
+         <div id="profile-women">        
+            <div class="circular-img">
+                <img src="img/testimonial-section/profile.png" alt="Kristin Watson image">
+            </div>
+            <div>        
+                <p id="name">Kristin Watson</p>
+                <p id="company">Booking.com</p>
+            </div>
         </div>
-        <h3>Hear What Our Clients Have to Say</h3>
-        <h4>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</h4>
-        <img src="img/testimonial-section/profile.png">
-        <p>Kristin Watson</p>
-        <p>Booking.com</p>
-        <div class="container-img">
-            <img src="img/testimonial-section/memoji-3.png">
-            <img src="img/testimonial-section/memoji-4.png">
-        </div>
+        <img src="img/testimonial-section/memoji-3.png" alt="emoji 3" id="emoji-3">
+        <img src="img/testimonial-section/memoji-4.png" alt="emoji 4" id="emoji-4">
     </section>
     <section id="services-section">
         <h3>Our Services</h3>
         <div class="container-cards">
             <article>
-                <img src="img/services-section/icons/1.svg">
-                <div class="container">
-                    <h4>User Interface Design</h4>
-                    <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
-                    <a href="#" class="link-color">Learn more</a>
+                <div class="icon">
+                    <img src="img/services-section/icons/1.svg">
                 </div>
-                </article>
+                <h4>User Interface Design</h4>
+                <p>Circle provides you with a stunning user interface design that is accessible to everyone.</p>
+                <a href="#" class="link-color">Learn more</a>
+            </article>
             </article>
             <article>
-                <img src="img/services-section/icons/2.svg">
-                <div class="container">
-                    <h4>User Experience Design</h4>
-                    <p>Circle always focuses on delivering the best user experience to your customers.</p>
-                    <a href="#" class="link-color">Learn more</a>
+                <div class="icon">
+                    <img src="img/services-section/icons/2.svg">
                 </div>
+                <h4>User Experience Design</h4>
+                <p>Circle always focuses on delivering the best user experience to your customers.</p>
+                <a href="#" class="link-color">Learn more</a>
             </article>
             <article>
-                <img src="img/services-section/icons/3.svg">
-                <div class="container">
-                    <h4>Application Development</h4>
-                    <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
-                    <a href="#" class="link-color">Learn more</a>
+                <div class="icon">
+                    <img src="img/services-section/icons/3.svg">
                 </div>
+                <h4>Application Development</h4>
+                <p>We develop high-quality mobile and web applications using the latest technology stack.</p>
+                <a href="#" class="link-color">Learn more</a>
             </article>
         </div>
     </section>
     <section id="cta-section">
-        <div>
+        <div class="container">
             <h3>Do you have any questions?</h3>
             <p>Let us help you!</p>
-            <form>
-                <img src="img/newsletter/icon/mail.svg">
-                <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder= "Enter your email">
-                <button type="submit">Subscribe</button>
+            <form> 
+                <div>      
+                    <label for="email"><img src="img/newsletter/icon/mail.svg"></label>
+                    <input type="email" id="email" name="email" placeholder= "Enter your email">
+                </div>
+                <button type="submit" class="button">Subscribe</button>
             </form>
         </div>
     </section>
     <footer>
-        <div>
+        <div id="direction">
             <a href="index.html"><img src="img/logos/circle.svg"></a>
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+            <p>2972 Westheimer Rd. Santa Ana,</p>
+            <p>Illinois 85486</p>
         </div>
-        <div>
-            <a href="#">Team</a>
-            <a href="#">Services</a>
-            <a href="#">About Us</a>
-            <a href="#">Press</a>
-            <a href="#">Projects</a>
-            <a href="#">Privacy Policy</a>
+        <div id="footer-links">
+            <a href="#" class="grid-item">Team</a>
+            <a href="#" class="grid-item">Services</a>
+            <a href="#" class="grid-item">About Us</a>
+            <a href="#" class="grid-item">Press</a>
+            <a href="#" class="grid-item">Projects</a>
+            <a href="#" class="grid-item">Privacy Policy</a>
         </div>
     </footer>
 </body>
