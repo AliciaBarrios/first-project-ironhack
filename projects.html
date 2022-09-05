@@ -19,7 +19,7 @@
         </nav>
         <a href="contact-us.html" class="button">Contact Us</a>
     </header>
-    <section id="main-project">
+    <section id="main-project" class="width-section">
         <h1>Simplify</h1>
         <div>
             <p>UI Design & App Development</p>
@@ -45,53 +45,61 @@
             </p>
         </div>
     </section>
-    <sectiion id="other-projects">
-        <h3>Other Projects</h3>
+    <section id="other-projects" class="width-section">
+        <h3 class="title-section">Other Projects</h3>
         <div class="container-cards">
-            <article>
+            <article class="card">
                 <img src="img/projects-section/4.jpg">
-                <h4>Orbit</h4>
-                <p>UI Design</p>
-                <a href="#">Learn more</a>
+                <div class="container-text">
+                    <h4>Orbit</h4>
+                    <p>UI Design</p>
+                    <a href="#">Learn more</a>
+                </div>
             </article>
-            <article>
+            <article class="card">
                 <img src="img/projects-section/5.jpg">
-                <h4>Purify</h4>
-                <p>UI/UX Design</p>
-                <a href="#">Learn more</a>
+                <div class="container-text">
+                    <h4>Purify</h4>
+                    <p>UI/UX Design</p>
+                    <a href="#">Learn more</a>
+                </div>
             </article>
-            <article>
+            <article class="card">
                 <img src="img/projects-section/6.jpg">
-                <h4>Crypto Pie</h4>
-                <p>App Development</p>
-                <a href="#">Learn more</a>
+                <div class="container-text">
+                    <h4>Crypto Pie</h4>
+                    <p>App Development</p>
+                    <a href="#">Learn more</a>
+                </div>
             </article>
         </div>
-    </sectiion>
+    </section>
     <section id="cta-section">
-        <div>
+        <div class="width-section">
             <h3>Do you have any questions?</h3>
             <p>Let us help you!</p>
-            <form>
-                <img src="img/newsletter/icon/mail.svg">
-                <label></label>
-                <input type="email" placeholder= "Enter your email">
-                <button>Subscribe</button>
+            <form> 
+                <div>      
+                    <label for="email"><img src="img/newsletter/icon/mail.svg"></label>
+                    <input type="email" id="email" name="email" placeholder= "Enter your email">
+                </div>
+                <button type="submit" class="button">Subscribe</button>
             </form>
         </div>
     </section>
     <footer>
-        <div>
+        <div id="direction">
             <a href="index.html"><img src="img/logos/circle.svg"></a>
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+            <p>2972 Westheimer Rd. Santa Ana,</p>
+            <p>Illinois 85486</p>
         </div>
-        <div>
-            <a href="#">Team</a>
-            <a href="#">Services</a>
-            <a href="#">About Us</a>
-            <a href="#">Press</a>
-            <a href="#">Projects</a>
-            <a href="#">Privacy Policy</a>
+        <div id="footer-links">
+            <a href="#" class="grid-item">Team</a>
+            <a href="#" class="grid-item">Services</a>
+            <a href="#" class="grid-item">About Us</a>
+            <a href="#" class="grid-item">Press</a>
+            <a href="#" class="grid-item">Projects</a>
+            <a href="#" class="grid-item">Privacy Policy</a>
         </div>
     </footer>
 </body>
