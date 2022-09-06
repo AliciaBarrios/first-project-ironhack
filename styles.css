@@ -16,14 +16,14 @@ h1, h3, h4 {
     margin: 0;
 }
 h1 {
-    font-size: 2.75rem;
+    font-size: 2.50rem;
 }
 h3{
-    font-size: 2.25rem;
+    font-size: 2.00rem;
 }
 
 h4 {
-    font-size: 1.50rem;
+    font-size: 1.30rem;
 }
 
 .link-color {
@@ -132,9 +132,8 @@ header .button {
     display: flex;
     flex-direction: column;
     text-align: center;
-    max-width: 80vw;
-    margin: auto;
 }
+
 #hero-section p {
     font-size: 1.25rem;
 }
@@ -142,10 +141,10 @@ header .button {
 #hero-section .container-links {
     display: flex;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    max-width: 80vw;
-    margin: 1.5em auto;
+    width: 100%;
+    margin: 1.5em 0;
 }
 
 #hero-section .container-links .link {
@@ -208,12 +207,13 @@ header .button {
 
 .container-cards .container-text {
     padding: 2rem;
+    box-sizing: border-box;
 }
 
 .container-cards .container-text p {
     padding-bottom: 2.2rem;
     line-height: 1.75rem;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
 }
 
 .container-cards .container-text a:hover {
@@ -394,5 +394,110 @@ footer {
     font-size: 1.15rem;
 }
 
+/*DESKTOP STYLES*/
 
+@media (min-width: 960px) {
 
+    html, body {
+        font-size: 16px;
+    }
+
+    /*HEADER STYLES*/
+    header {
+        justify-content: space-between;
+        width: 80vw;
+        margin: 1.5rem auto;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    nav ul {
+        justify-content: space-between;
+    }
+
+    header .button {
+        display: inline;
+    }
+
+    /*HERO-SECTION STYLES*/
+    #hero-section {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        height: 500px;
+    }
+
+    #hero-section .container-img {
+        width: 500px;
+        height: 500px;
+        position: relative;
+        top: 0px;
+        right: 0px;
+        overflow: hidden;
+    }
+
+    #hero-section #main-img {
+        width: 400px;
+        height: auto;
+        position: absolute;
+        top: 20px;
+        left: 50px; 
+    }
+
+    #hero-section #card-1 {
+        width: 220px;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 15px;
+    }
+
+    #hero-section #card-2 {
+        width: 200px;
+        height: auto;
+        z-index: 1;
+        position: absolute;
+        bottom: -45px;
+        right: 10px;
+    }
+
+    #hero-section .container {
+        width: 45%;
+        height: 50%;
+        text-align: left;
+        justify-content: space-evenly;
+    }
+
+    #hero-section p {
+        font-size: 1.15rem;
+        line-height: 1.85rem;
+    }
+
+    #hero-section .container-links {
+        justify-content: flex-start;
+    }
+
+    /*CLIENT-SECTION STYLES*/
+
+    #client-section {
+        display: none;
+    }
+
+    /*STYLES OF SECTIONS WITH CARDS*/
+    .container-cards {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-cards .card {
+        width: 30%;
+    }
+
+    .container-cards .card img {
+        width: 100%;
+        height: 50%;
+    }
+}
