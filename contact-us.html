@@ -19,35 +19,37 @@
         </nav>
         <a href="contact-us.html" class="button">Contact Us</a>
     </header>
-    <h1>Contact Us</h1>
-    <form>
-        <label for="name">Full Name *</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
-
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="Por favor, indica el código de páis seguido de tu número de teléfono, e.g. +34XXXXXXXXX" required>
-
-        <label for="message">Message</label>
-        <input type="text" id="message" name="message" placeholder="Write your message here..." size="60">
-
-        <button type="submit">Submit</button>
-    </form>
-
-    <footer>
-        <div>
+    <section id="contact-form" class="width-section">
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Full Name *</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+    
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="Por favor, indica el código de páis seguido de tu número de teléfono, e.g. +34XXXXXXXXX" required>
+    
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="Write your message here..." minlength="50">
+    
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </section>
+    <footer id="footer" class="width-section">
+        <div id="direction">
             <a href="index.html"><img src="img/logos/circle.svg"></a>
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486</p>
+            <p>2972 Westheimer Rd. Santa Ana,</p>
+            <p>Illinois 85486</p>
         </div>
-        <div>
-            <a href="#">Team</a>
-            <a href="#">Services</a>
-            <a href="#">About Us</a>
-            <a href="#">Press</a>
-            <a href="#">Projects</a>
-            <a href="#">Privacy Policy</a>
+        <div id="footer-links">
+            <a href="#" class="grid-item">Team</a>
+            <a href="#" class="grid-item">Services</a>
+            <a href="#" class="grid-item">About Us</a>
+            <a href="#" class="grid-item">Press</a>
+            <a href="#" class="grid-item">Projects</a>
+            <a href="#" class="grid-item">Privacy Policy</a>
         </div>
     </footer>
 </body>

@@ -2,7 +2,7 @@
 
 /*GENERAL STYLES*/
 html, body {
-    background-color:  #F2F4FC;
+    background-color:  #F4F6FC;
     color: #6B708D;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
@@ -355,23 +355,15 @@ header .button {
 
 /*FOOTER STYLES*/
 
-footer {
-    background-color: white;
-}
-
-#direction, #footer-links {
-    width: 70vw;
-    margin: auto;
-}
-
-#direction {
-    padding: 2rem 0 0;
+#footer {
+    margin-top: 7rem;
 }
 
 #footer-links {
     display: grid;
     grid-template-columns: auto auto;
-    padding: 2rem 0 4rem;
+    justify-content: space-between;
+    padding: 2rem 0 3rem;
 }
 
 #footer-links .grid-item{
@@ -379,7 +371,7 @@ footer {
     padding: 1rem;
 }
 
-/*PROJECTS-PAGES STYLES*/
+/*PROJECTS PAGE STYLES*/
 /*MAIN-PROJECT STYLES*/
 
 #main-project img {
@@ -393,6 +385,28 @@ footer {
     line-height: 1.75rem;
     font-size: 1.15rem;
 }
+
+/*CONTACT-US PAGE STYLES*/
+#contact-form h1 {
+    margin: 5rem 0 4rem;
+}
+
+#contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form form input {
+    background-color: rgba(107, 112, 141, 0.1);
+    border: none;
+    padding: 1rem;
+    margin: 0.5rem 0 1.5rem;
+}
+
+#contact-form form #message {
+    height: 150px;
+}
+
 
 /*DESKTOP STYLES*/
 
@@ -483,7 +497,9 @@ footer {
     /*CLIENT-SECTION STYLES*/
 
     #client-section {
-        display: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 3rem 0;
     }
 
     /*STYLES OF SECTIONS WITH CARDS*/
