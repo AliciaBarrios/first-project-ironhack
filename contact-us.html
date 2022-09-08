@@ -21,7 +21,7 @@
     </header>
     <section id="contact-form" class="width-section">
         <h1>Contact Us</h1>
-        <form>
+        <form action="https://database.deta.sh/v1/a0wwnrex/contactmessages/items" method="POST">
             <label for="name">Full Name *</label>
             <input type="text" id="name" name="name" placeholder="Enter your full name" required>
     
@@ -32,7 +32,7 @@
             <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" pattern="(\+)[0-9]{11}" title="Por favor, indica el código de páis seguido de tu número de teléfono, e.g. +34XXXXXXXXX" required>
     
             <label for="message">Message</label>
-            <input type="text" id="message" name="message" placeholder="Write your message here..." minlength="50">
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="10" minlength="50" required></textarea>
     
             <button type="submit" class="button">Submit</button>
         </form>
@@ -53,4 +53,5 @@
         </div>
     </footer>
 </body>
+<script src="index.js"></script>
 </html>
