@@ -1,34 +1,43 @@
-const url = "https://database.deta.sh/v1/a0wwnrex/contactmessages/items";
+let form = document.getElementById("formulario");
+const url = form.action;
 
-const datos = new FormData(document.getElementById("formulario"));
-
-const body = { item: datos };
-
-const fetchParams = {
-    method: 'POST',
-    headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json",
-        "X-API-KEY": "a0wwnrex_JeRhBybn5iFYziStv9d2M6Mchd2b4B4H"
-    },
-    body: JSON.stringify(body)
-};
+let name = document.querySelector("input[type=text]");
+let email = document.querySelector("input[type=email]");
+let phone = document.querySelector("input[type=tel]");
+let message = document.querySelector("textarea");
 
 
-async function enviarFormulario() {
+async function enviarFormulario(event) {
+    event.preventDefault();
+
+    const datos = {
+        name: name.value,
+        email: email.value,
+        phone: phone.value,
+        message: message.value  
+    };
+    
+    const fetchParams = {
+        method: 'POST',
+        headers: {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "X-API-Key": "a0wwnrex_JeRhBybn5iFYziStv9d2M6Mchd2b4B4H"
+        },
+        body: JSON.stringify({ item: datos })
+    };
+    
     try {
         let response = await fetch(url, fetchParams);
         if (response.ok) {
             let result = await response.json();
-            console.log(result);
-            result.innerHTML = "El formulario se ha enviado correctamente";
-            datos.reset();
+            console.log("El formulario se ha enviado correctamente");
+            form.reset();
         } else {
             throw new Error(response.statusText);
         }
     } catch (err) {
-        err.innerHTML = "Error al enviar el formulario";
-        console.log(err);
+        console.log("Error al enviar el formulario", err);
     }
 }
 
