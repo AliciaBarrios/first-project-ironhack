@@ -158,7 +158,21 @@ header .button {
 /*CLIENT-SECTION STYLES*/
 
 #client-section {
-    display: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 3rem auto 8rem;
+}
+
+#client-section a {
+    margin-bottom: 2rem;
+}
+
+#client-section img {
+    width: 80%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 /*STYLES OF SECTIONS WITH CARDS*/
@@ -178,8 +192,8 @@ header .button {
 
 .container-cards .card {
     background-color: white;
-    margin-bottom: 3rem;
     box-shadow: 0px 38.775508880615234px 77.55101776123047px 0px #0000001A;
+    margin-bottom: 3rem;
 }
 
 .container-cards .card:hover {
@@ -207,14 +221,23 @@ header .button {
 }
 
 .container-cards .container-text {
+    width: 100%;
+    height: 50%;
     padding: 2rem;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
 }
 
 .container-cards .container-text p {
     padding-bottom: 2.2rem;
     line-height: 1.75rem;
     font-size: 1.15rem;
+
+}
+
+.container-cards .container-text a {
+    margin-top: auto;
 }
 
 .container-cards .container-text a:hover {
@@ -237,6 +260,7 @@ header .button {
     background-position: center;
     background-color: #292E47;
     padding: 2rem 0.5rem;
+    margin: 8rem auto;
 }
 #emoji-1 {
     grid-area: emoji1;
@@ -313,6 +337,7 @@ header .button {
     background-color: #FFC600;
     text-align: center;
     padding: 4rem 0 6rem;
+    margin: 7rem auto;
 }
 
 #cta-section p {
@@ -374,17 +399,36 @@ header .button {
 
 /*PROJECTS PAGE STYLES*/
 /*MAIN-PROJECT STYLES*/
+#main-project h1 {
+    margin: 5rem 0 0.5rem;
+}
+
+#main-project #header-article p{
+    font-weight: 500;
+}
+
+#main-project #header-article span{
+    font-weight: 100;
+}
 
 #main-project img {
     width: 100%;
     height: auto;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    margin: 3rem 0;
 }
 
 #main-project .container-info p {
     text-align: justify;
     line-height: 1.75rem;
     font-size: 1.15rem;
+    font-weight: lighter;
+}
+
+/*OTHER-PROJECTS STYLES*/
+
+#other-projects {
+    margin: 6rem auto;
 }
 
 /*CONTACT-US PAGE STYLES*/
@@ -493,26 +537,12 @@ header .button {
     }
 
     /*CLIENT-SECTION STYLES*/
-
     #client-section {
         display: flex;
         justify-content: space-between;
-        padding: 3rem 0;
-        height: 100px;
-    }
-
-    #client-section img {
-        width: 80%;
-        height: auto;
-        -webkit-filter: grayscale(100%);
-        filter: grayscale(100%);
     }
 
     /*STYLES OF SECTIONS WITH CARDS*/
-    #project-section, #services-section {
-        height: 700px;
-    }
-
     .container-cards {
         flex-direction: row;
         justify-content: space-between;
@@ -538,7 +568,6 @@ header .button {
         justify-items: center;
         padding: 3rem 0.5rem;
         width: 90vw;
-        margin: 0 auto 9rem;
     }
 
     #emoji-2{
@@ -569,7 +598,6 @@ header .button {
     #cta-section {
         padding: 8rem 0 8rem;
         width: 90vw;
-        margin: auto;
     }
 
     #cta-section p {
@@ -624,11 +652,19 @@ header .button {
 
     /*PROJECTS PAGE STYLES*/
     /*MAIN-PROJECT STYLES*/
+    #main-project h1 {
+        margin: 5rem 0 0.5rem;
+    }
+
+    #main-project #header-article {
+        display: flex;
+        justify-content: space-between;
+    }
 
     #main-project img {
         width: 100%;
-        height: auto;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        height: 65vh;
+        object-fit: cover;
     }
 
     #main-project .container-info p {

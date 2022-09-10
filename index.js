@@ -32,15 +32,17 @@ async function enviarFormulario(event) {
         if (response.ok) {
             let result = await response.json();
             console.log("El formulario se ha enviado correctamente");
+            alert("El formulario se ha enviado correctamente");
             form.reset();
         } else {
             throw new Error(response.statusText);
         }
     } catch (err) {
-        console.log("Error al enviar el formulario", err);
+        console.log("Error al enviar el formulario");
+        alert("Error al enviar el formulario");
     }
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.querySelector('#submit').addEventListener('click', enviarFormulario);
+    document.querySelector('form').addEventListener('submit', enviarFormulario);
     });
