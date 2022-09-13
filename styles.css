@@ -159,7 +159,7 @@ header .button {
 
 #client-section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     margin: 3rem auto 8rem;
 }
@@ -169,7 +169,7 @@ header .button {
 }
 
 #client-section img {
-    width: 80%;
+    width: 75%;
     height: auto;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
@@ -194,6 +194,7 @@ header .button {
     background-color: white;
     box-shadow: 0px 38.775508880615234px 77.55101776123047px 0px #0000001A;
     margin-bottom: 3rem;
+
 }
 
 .container-cards .card:hover {
@@ -243,6 +244,7 @@ header .button {
 .container-cards .container-text a:hover {
     font-weight: bold;
 }
+
 
 /*TESTIMONIAL-SECTION STYLES*/
 #testimonial-section {
