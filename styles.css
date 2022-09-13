@@ -395,6 +395,7 @@ header .button {
 #footer-links .grid-item{
     text-align: center;
     padding: 1rem;
+    color: #6B708D;
 }
 
 /*PROJECTS PAGE STYLES*/
@@ -448,6 +449,29 @@ header .button {
     margin: 0.5rem 0 1.5rem;
     font-family: 'Roboto', sans-serif;
     resize: none;
+}
+
+#contact-form #form-message {
+    background-color: #072AC8;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    max-width: 50%;
+    text-align: center;
+}
+
+#contact-form #form-message #btn-close-msg {
+    background-color: white;
+    border: none;
+    color: #6B708D;
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#contact-form #form-message::backdrop {
+    background-color: rgba(0, 0, 0, .55);
 }
 
 /*DESKTOP STYLES*/
@@ -647,7 +671,7 @@ header .button {
 
     #footer-links .grid-item{
         text-align: start;
-        padding: 1rem 2rem;
+        padding: 2rem 3rem;
     }
 
     /*PROJECTS PAGE STYLES*/

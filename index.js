@@ -6,6 +6,10 @@ let email = document.querySelector("input[type=email]");
 let phone = document.querySelector("input[type=tel]");
 let message = document.querySelector("textarea");
 
+let dialog = document.getElementById("form-message");
+let resultMessage = document.getElementById("text-message");
+let btnClose = document.getElementById("btn-close-msg");
+
 
 async function enviarFormulario(event) {
     event.preventDefault();
@@ -31,15 +35,21 @@ async function enviarFormulario(event) {
         let response = await fetch(url, fetchParams);
         if (response.ok) {
             let result = await response.json();
-            console.log("El formulario se ha enviado correctamente");
-            alert("El formulario se ha enviado correctamente");
+            resultMessage.innerHTML = "El formulario se ha enviado correctamente";
+            dialog.showModal();
+            btnClose.addEventListener("click", () => {
+                dialog.close();
+            });
             form.reset();
         } else {
             throw new Error(response.statusText);
         }
     } catch (err) {
-        console.log("Error al enviar el formulario");
-        alert("Error al enviar el formulario");
+        resultMessage.innerHTML = "Error al enviar el formulario -\n" + err;
+        dialog.showModal();
+        btnClose.addEventListener("click", () => {
+            dialog.close();
+        });
     }
 }
 
